@@ -1,0 +1,244 @@
+/* sub_2_0 */
+
+/* sub_main_ banner */
+.sub_2 .sub_main_banner {
+    width: 100vw;
+    height: 500px;
+    /* background-color: #ccc; */
+}
+.sub_main_banner .container {
+    max-width: 100%;
+    height: 100%;
+    background-image: url(../images/imagesk/resaerch_main_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub_main_banner .container h1 {
+    color: white;
+    font-size: 80px;    
+}
+
+/* sub_menu */
+.sub_2 .sub_menu {
+    margin-top: 20px;
+    max-width: 1520px;
+    height: 20px;
+    display: fixed;
+    left:0px;
+    top: 520px;
+    padding: 20px;
+}
+.sub_2 .sub_menu > a{
+    font-size: 14px;
+}
+
+/* sub_title */
+.sub_2 .sub_title {
+    width: 100%;
+    height: 700px;
+    margin-top: 50px;
+}
+.sub_2 .sub_title .container {
+    max-width: 1920px;
+    height: 100%;
+    margin-top: 50px;
+    position: relative;
+    /* outline: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+}
+.sub_2 .sub_title .container .text {
+    width:1520px;
+    position: relative;
+}
+.sub_2 .sub_title .container .text .mark {
+    width: 130px;
+    height: 3px;
+    background-color: #a2c233;
+    position: absolute;
+    left: 0;
+}
+.sub_2 .sub_title p {
+    font-size: 50px;
+    padding-top: 10px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+/* 연구소 소개 */
+#center {
+    width: 100vw;
+    height: 1350px;
+}
+#center .container {
+    max-width: 1920px;
+    height: 100%;
+    /* outline: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#center .container .text {
+    max-width: 1520px;
+    position: relative;
+    margin-top: 160px;
+    margin-bottom: 100px;
+    /* outline: 1px solid red; */
+}
+#center .container .mark {
+    width: 130px;
+    height: 3px;
+    background-color: #a2c233;
+    position: absolute;
+    left: 5px;
+}
+#center .container h1 {
+    font-size: 48px;
+    font-weight: 500;
+}
+#center .container img {
+    margin-bottom: 100px;
+}
+
+/* 제품 개발 */
+.sub_2 #pm {
+    width: 100vw;
+    /* height: 1000px; */
+}
+#pm .container {
+    max-width: 1920px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#pm .container .text {
+    width: 1520px;
+    position: relative;
+    margin-top: 160px;
+    margin-bottom: 100px;
+}
+#pm .container .mark {
+    width: 130px;
+    height: 3px;
+    background-color: #a2c233;
+    position: absolute;
+    left: 5px;
+}
+#pm .container h1 {
+    font-size: 48px;
+    font-weight: 500;
+}
+#pm .container > ul {
+    width: 1520px;
+    height: 630px;
+    display: flex;
+    justify-content: space-between;
+}
+#pm .container ul > li {
+    width: 450px;
+    height: 630px;
+}
+#pm .container ul > li > h2 {
+    margin-top: 25px;
+    font-size: 26px;
+    font-weight: 500;
+}
+#pm .container ul > li > p {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* 기술 특허 */
+#tech {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    width: 100vw;
+    height: 500px;
+    /* background-color: #ccc; */
+}
+#tech .container {
+    max-width: 1920px;
+    height: 100%;
+    position: relative;
+}
+#tech .container .techBanner {
+    max-width: 1520px;
+    height: 100%;
+    /* outline: 1px solid red; */
+    background-image: url(../images/imagesK/tech_background.jpg);
+    padding-top: 115px;
+}
+#tech .container h1 {
+    color: white;
+    font-size: 48px;
+    margin-left: 100px;
+    margin-bottom: 80px;
+}
+#tech .container button {
+    width: 160px;
+    height: 50px;
+    background: none;
+    border: 1.5px solid #fff;
+    margin-left: 100px;
+}
+#tech .container button > span {
+    font-size: 15px;
+    color: #fff;
+}
+
+/* 특허증 */
+#tech .container > #paper {
+    max-width: 1920px;
+    height: 650px;
+    /* outline: 1px solid blue; */
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* display: none; */
+}
+#paper .close {
+    /* outline: 1px solid blue; */
+    position: relative;
+    height: 60px;
+}
+#paper .close button {
+    width: 160px;
+    height: 50px;
+    background: none;
+    border: 1.5px solid #fff;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: absolute;
+    right: 100px;
+}
+#paper .images {
+    /* outline: 1px solid red; */
+    width : 6750px;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: translate 20s infinite;
+    
+}
+@keyframes translate {
+    from {
+        translate: 0px;
+    }
+    to {
+        translate: -4900px;
+    }
+}
+
+#paper .images img {
+    outline: 1px solid black;
+    width: 400px;
+    height: 500px;
+}
