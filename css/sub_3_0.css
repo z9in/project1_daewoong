@@ -104,7 +104,7 @@
 .viewBox {
     width: 100vw;
     height: 1350px;
-    background-color: lightblue;
+    /* background-color: lightblue; */
     margin-bottom: 200px;
 }
 .viewBox .container {
@@ -123,7 +123,7 @@
     
 }
 .viewBox .container ul > li {
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
     width: 500px;
     height: 600px;   
     margin-top: 40px;
