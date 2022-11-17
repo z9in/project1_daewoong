@@ -5,22 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>제품정보</title>
-    <style>
-        .textbox {
-            width: 200px;
-            border: 0;
-            border-bottom: 2px solid black;
-        }
-        .search {
-            background-image: url(../images/porduct_search_img.png);
-            background-color: none;
-            width: 25px;
-            height: 25px;
-        }
-    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/header.css">
+    <link media="screen and (min-width:800px" rel="stylesheet" href="../css/sub_3_0.css">
+    <!-- <link media="screen and (max-width:800px" rel="stylesheet" href="../css/sub_2_0 mobile.css"> -->
 </head>
 <body>
-    <header></header>
+    <header class="header">
+        <h1 class="logo">
+          <a href="#">
+            <img src="../images/imagesK/logo 2.png" alt="logo" />
+          </a>
+        </h1>
+        <nav>
+          <ul class="dep1_ul">
+            <li class="dep1_li">
+              <a href="#"
+                >회사소개
+                <ul class="dep2_ul">
+                  <li class="dep2_li"><a href="#">회사 비전 </a></li>
+                  <li class="dep2_li"><a href="#">오시는 길 </a></li>
+                </ul>
+              </a>
+            </li>
+            <li class="dep1_li">
+              <a href="#"
+                >연구정보
+                <ul class="dep2_ul">
+                  <li class="dep2_li"><a href="#">연구소 소개 </a></li>
+                  <li class="dep2_li"><a href="#">기술 특허 </a></li>
+                </ul>
+              </a>
+            </li>
+            <li class="dep1_li">
+              <a href="#"
+                >제품정보
+                <ul class="dep2_ul">
+                  <li class="dep2_li"><a href="#">제품검색 </a></li>
+                </ul>
+              </a>
+            </li>
+            <li class="dep1_li">
+              <a href="#"
+                >홍보센터
+                <ul class="dep2_ul">
+                  <li class="dep2_li"><a href="#">뉴스 </a></li>
+                  <li class="dep2_li"><a href="#">상담/FAQ </a></li>
+                  <li class="dep2_li"><a href="#">인재채용</a></li>
+                </ul>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header_ui">
+          <div class="lang">
+            <a href="#"
+              >KR
+              <img src="../images/imagesK/lang_arrow.svg" alt="lang-btn" />
+            </a>
+          </div>
+          <div class="m_btn">
+            <a href="#">
+              <img src="../images/imagesK/site-mep-menu.svg" alt="site-mep-menu" />
+            </a>
+          </div>
+        </div>
+      </header>
 
     <main class="sub_3">
         <section class="sub_main_banner">
@@ -29,8 +79,9 @@
             </div>        
         </section>
         <div class="sub_menu">
-            <p>제품정보</p>
-            <p>제품검색</p>
+            <img src="../images/imagesK/sub_home.png" alt="img">
+            <a href="#"> | 제품정보 | </a>
+            <a href="#">제품검색 | </a>
         </div>
         <section class="sub_title">
             <div class="container">
@@ -44,154 +95,194 @@
                     <input class="textbox" type="text">
                     <input class="search" type="submit" value=" ">
                 </form>
-                <ul class="large_kind">
-                    <li>
-                        <p>전체</p>
-                    </li>
-                    <li>
-                        <p>자동차 용품</p>                        
-                        <ul class="small_kind">
-                            <li>자동차 외장재</li>
-                            <li>자동차 내장재</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <p>기타 용품</p>
-                        <li>가정용</li>
-                        <li>산업용</li>
-                    </li>
+                <ul>
+                    <li><a href="#">전체</a></li>
+                    <li><a href="#">자동차 외장재</a></li>
+                    <li><a href="#">자동차 내장재</a></li>
+                    <li><a href="#">기타 용품</a></li>
                 </ul>
             </div>      
         </section>
         <section class="viewBox">
-            <div class="contaner">
+            <div class="container">
                 <ul>
                     <li class="car_in">
-                        <img src="../images/products/car_door.jpg" alt="TrunkBox">
+                        <img src="../images/imagesK/products/car_door.jpg" alt="TrunkBox">
                         <p>특성 / 용도 : 성형성 우수, 내충격성 우수 </p>
                         <h2>Trunk Box</h2>
                     </li>
                     <li class="car_in">
-                        <img src="../images/products/car_seat.jpg" alt="SeetBackBoard">
+                        <img src="../images/imagesK/products/car_seat.jpg" alt="SeetBackBoard">
                         <p>특성 / 용도 : 충격 흡수 우수 </p>
                         <h2>Seat Back Board</h2>
                     </li>
                     <li class="car_in">
-                        <img src="../images/products/car_glove.jpg" alt="GloveBox">
+                        <img src="../images/imagesK/products/car_glove.jpg" alt="GloveBox">
                         <p>특성 / 용도 : 유동특성 우수 </p>
                         <h2>Glove Box</h2>
                     </li>
                     <li class="car_in">
-                        <img src="../images/products/car_door.jpg" alt="Door Trim">
+                        <img src="../images/imagesK/products/car_door.jpg" alt="Door Trim">
                         <p>특성 / 용도 : 내스크래치성 우수, 유동특성 우수, 외관양호</p>
                         <h2>Door Trim</h2>
                     </li>
                     <li class="car_in">
-                        <img src="../images/products/car_pillar.jpg" alt="Pillar Trim">
+                        <img src="../images/imagesK/products/car_pillar.jpg" alt="Pillar Trim">
                         <p>특성 / 용도 : 내스크래치성 우수, 유동특성 우수, 외관양호</p>
                         <h2>Pillar Trim</h2>
                     </li>
                     <li class="car_in">
-                        <img src="../images/products/car_instrument.jpg" alt="Instrument Panel">
+                        <img src="../images/imagesK/products/car_instrument.jpg" alt="Instrument Panel">
                         <p>특성 / 용도 : 내스크래치성 우수, 유동특성 우수, 외관양호 </p>
                         <h2>Instrument Panel</h2>
                     </li>
                     <li class="car_out">
-                        <img src="../images/products/car_o_engine.jpg" alt="enginecover">
+                        <img src="../images/imagesK/products/car_o_engine.jpg" alt="enginecover">
                         <p>특성 / 용도 : 성형성 우수, 후변성 우수</p>
                         <h2>Engine Cover</h2>
                     </li>
                     <li class="car_out">
-                        <img src="../images/products/car_o_bumper.jpg" alt="bumper">
+                        <img src="../images/imagesK/products/car_o_bumper.jpg" alt="bumper">
                         <p>특성 / 용도 : 저온충격강도 우수, 자동차 외장 fascia</p>
                         <p>특성 / 용도 : 유동성 우수, 무도장 그레이드 보유, 내충격성 우수</p>
                         <h2>bumper</h2>
                     </li>
                     <li class="car_out">
-                        <img src="../images/products/car_o_lamp.jpg" alt="bumper">
+                        <img src="../images/imagesK/products/car_o_lamp.jpg" alt="bumper">
                         <p>특성 / 용도 : 내습성 우수</p>
                         <h2>Lamp Housing</h2>
                     </li>
                     <li class="car_out">
-                        <img src="../images/products/car_o_air.jpg" alt="Air Cleaner Cover">
+                        <img src="../images/imagesK/products/car_o_air.jpg" alt="Air Cleaner Cover">
                         <p>특성 / 용도 : 성형성 우수, 내충격성 우수</p>
                         <h2>Air Cleanner Cover</h2>
                     </li>
                     <li class="car_out">
-                        <img src="../images/products/car_o_fan.jpg" alt="Fan Shroud">
+                        <img src="../images/imagesK/products/car_o_fan.jpg" alt="Fan Shroud">
                         <p>특성 / 용도 : 성형성 우수, 후면성 우수</p>
                         <h2>Fan Shroud</h2>
                     </li>
                     <li class="car_out">
-                        <img src="../images/products/car_o_radiator.jpg" alt="Radiator Grill">
+                        <img src="../images/imagesK/products/car_o_radiator.jpg" alt="Radiator Grill">
                         <p>특성 / 용도 : 칫수 안정성 우수</p>
                         <h2>Radiator Grill</h2>
                     </li>
                     <li class="car_out">
-                        <img src="../images/products/car_o_battery.jpg" alt="Battery Tray">
+                        <img src="../images/imagesK/products/car_o_battery.jpg" alt="Battery Tray">
                         <p>특성 / 용도 : 성형성 우수</p>
                         <h2>Battery Tray</h2>
                     </li>
                     <li class="car_out">
-                        <img src="../images/products/car_o_cowl.jpg" alt="Cowl Top">
+                        <img src="../images/imagesK/products/car_o_cowl.jpg" alt="Cowl Top">
                         <p>특성 / 용도 : 내후성 우수</p>
                         <h2>Cowl Top</h2>
                     </li>
                     <li class="car_out">
-                        <img src="../images/products/car_o_wheel.jpg" alt="Wheel Guard">
+                        <img src="../images/imagesK/products/car_o_wheel.jpg" alt="Wheel Guard">
                         <p>특성 / 용도 : 유동성 우수</p>
                         <h2>Wheel Guard</h2>
                     </li>
                     <li class="car_out">
-                        <img src="../images/products/car_o_mud.jpg" alt="Mud Guard">
+                        <img src="../images/imagesK/products/car_o_mud.jpg" alt="Mud Guard">
                         <p>특성 / 용도 : 고충격, 저온충격 우수, 칫수안정성 우수</p>
                         <h2>Mud Guard</h2>
                     </li>
                     <li class="car_out">
-                        <img src="../images/products/car_o_silside.jpg" alt="Sillside Molding">
+                        <img src="../images/imagesK/products/car_o_silside.jpg" alt="Sillside Molding">
                         <p>특성 / 용도 : 칫수 안정성 우수, 내후성 우수</p>
                         <h2>Sillside Molding</h2>
                     </li>
                     <li class="ect">
-                        <img src="../images/products/ind_hom.jpg" alt="건축자재">
+                        <img src="../images/imagesK/products/ind_hom.jpg" alt="건축자재">
                         <p>특성 / 용도 : 내구성 우수, 내충격성 우수</p>
                         <h2>건축자재</h2>
                     </li>
                     <li class="ect">
-                        <img src="../images/products/ind_pipe.jpg" alt="수로">
+                        <img src="../images/imagesK/products/ind_pipe.jpg" alt="수로">
                         <p>특성 / 용도 : 내구성 우수, 내충격성 우수</p>
                         <h2>수로</h2>
                     </li>
                     <li class="ect">
-                        <img src="../images/products/ind_padal.jpg" alt="패달">
+                        <img src="../images/imagesK/products/ind_padal.jpg" alt="패달">
                         <p>특성 / 용도 : 내구성 우수, 내충격성 우수</p>
                         <h2>패달</h2>
                     </li>
                     <li class="ect">
-                        <img src="../images/products/house_trom.jpg" alt="세탁기">
+                        <img src="../images/imagesK/products/house_trom.jpg" alt="세탁기">
                         <p>특성 / 용도 : 성형성 우수, 내열성 우수</p>
                         <h2>세탁기 부품</h2>
                     </li>
                     <li class="ect">
-                        <img src="../images/products/house_sports.jpg" alt="운동기구">
+                        <img src="../images/imagesK/products/house_sports.jpg" alt="운동기구">
                         <p>특성 / 용도 : 내구성 우수, 내충격성 우수</p>
                         <h2>운동기구 부품</h2>
                     </li>
+                    <li class="all">
+                    
+                    </li>
+                    <li class="all">
+                        
+                    </li>
                 </ul>
             </div>       
+            <div class="dial">
+                <div class="container">
+                    <button class="leftMax">〈〈</button>
+                    <button class="left">〈</button>
+                    <div class="numbers">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                    </div>
+                    <button class="right">〉</button>
+                    <button class="rightMax">〉〉</button>
+                </div>
+                </div>
+                
         </section>
-        <section id="tech">
-            <div class="container">
-                <h1>
-                    우리는 오늘의 기술이 <br>
-                    내일의 당신에게 전해진다는 사실을 명심하고 있습니다
-                </h1>
-                <button>특허증 자세히 보기</button>
-            </div>
-        </section>
-        <div id="paper">
-            
-        </div>
     </main>
+    <footer class="footer">
+        <div class="footer_left">
+          <div class="footer_left_upper">
+            <a href="#">
+              <img src="../images/imagesK/logo.jpg" alt="logo" />
+            </a>
+            <div class="footer_left_info_1">
+              <p><a href="#">개인정보방침</a></p>
+              <p><a href="#">이용약관</a></p>
+            </div>
+          </div>
+  
+          <div class="footer_left_info_2">
+            <p>
+              충남 예산군 신암면 황금뜰로 937-24 | 대표번호 82-41-331-5190 | 팩스
+              82-41-331-5191 | E-mail : dlatmdqls007@naver.com <br />사업자 등록
+              번호 : 311-81-21637 | ⓒ2013.DAEWOONG All rights reserved.
+            </p>
+          </div>
+        </div>
+        <div class="footer_right">
+          <div class="family_site">
+            <p>Family Site</p>
+            <a href="#"><img src="../images/imagesK/drop_arrow.svg" alt="drop_btn" /></a>
+          </div>
+          <div class="sns_btn">
+            <a href="#">
+              <img src="../images/imagesK/naver.svg" alt="naver_btn" />
+            </a>
+            <a href="#">
+              <img src="../images/imagesK/facebook.svg" alt="facebook_btn" />
+            </a>
+            <a href="#">
+              <img src="../images/imagesK/instagram.svg" alt="instagram_btn" />
+            </a>
+            <a href="#">
+              <img src="../images/imagesK/youtube.svg" alt="youtube_btn" />
+            </a>
+          </div>
+        </div>
+      </footer>
+      <script src="../js/sub_3_0.js"></script>
 </body>
 </html>

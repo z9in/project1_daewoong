@@ -1,0 +1,177 @@
+/* sub_3_0.css */
+.sub_3 .sub_main_banner {
+    width: 100vw;
+    height: 500px;
+}
+.sub_3 .sub_main_banner .container {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/imagesK/sub-title_product.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub_3 .sub_main_banner .container h1 {
+    font-size: 80px;
+    font-weight: 700;
+    color: #fff;
+}
+/* sub_menu */
+.sub_3 .sub_menu {
+    margin-top: 25px;
+    max-width: 1520px;
+    height: 20px;
+    display: fixed;
+    left:0px;
+    top: 520px;
+    padding: 20px;
+}
+.sub_3 .sub_menu > a{
+    font-size: 14px;
+}
+.sub_3 .sub_title {
+    margin-top: 160px;
+    width: 100vw;
+    height: 60px;
+    /* outline: 1px solid red; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.sub_3 .sub_title .container {
+    width: 1520px;
+    height: 100%;
+    position: relative;
+    /* outline: 1px solid blue; */
+
+}
+.sub_3 .sub_title .container .mark {
+    width: 200px;
+    height: 3px;
+    background-color: #a2c233;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.sub_3 .sub_title .container h2 {
+    font-size: 48px;
+    font-weight: 500;    
+}
+.sub_3 #kind {
+    width: 100vw;
+    height: 250px;
+    /* outline: 1px solid red; */
+}
+#kind .container {
+    max-width: 1520px;
+    height: 100%;
+}
+#kind .container .textbox {
+    width: 1450px;
+    border: 0;
+    border-bottom: 3px solid #000;
+    margin-top: 25px;
+}
+#kind .container .search {
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/imagesK/bx_search.png);
+    border: 0;
+    cursor: pointer;
+}
+#kind .container ul {
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+#kind .container ul > li {
+    margin-top: 20px;
+    width: calc((100% - 80px)/4);
+    height: 100%;
+    border: 1px solid #023586;
+    position: relative;
+    text-align: center;
+    padding-top: 12px;
+}
+#kind .container ul > li > a {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.viewBox {
+    width: 100vw;
+    height: 1350px;
+    background-color: lightblue;
+    margin-bottom: 200px;
+}
+.viewBox .container {
+    width: 1920px;
+    height: 100%;
+    /* outline: 1px solid red; */
+    position: relative;
+    overflow: hidden;
+}
+.viewBox .container ul {
+    width: 100%;
+    height: 5440px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.viewBox .container ul > li {
+    outline: 1px solid black;
+    width: 500px;
+    height: 600px;   
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.viewBox .container ul li> img {
+    width: 100%;
+    height: 450px;
+}
+.viewBox .container ul li> p {
+    font-size: 18px;
+    margin-top: 35px;
+} 
+.viewBox .container ul li> h2 {
+    font-size: 27px;
+    margin-top: 18px;
+} 
+.viewBox .dial {
+    margin-top: 30px;
+    /* outline: 1px solid red; */
+    width: 1920px;
+}
+.viewBox .dial .container {
+    max-width: 500px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+.viewBox .dial .container button {
+    width: 30px;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+.viewBox .dial .container .numbers {
+    width: 200px;
+    height: 100%;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* outline: 1px solid black; */
+}
+.viewBox .dial .container p {
+    width: 30px;
+    text-align: center;
+    font-size: 14px;
+    border-left: 1px solid #023586;
+    border-right: 1px solid #023586;
+    cursor: pointer;
+}
