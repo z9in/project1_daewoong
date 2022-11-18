@@ -1,0 +1,123 @@
+/* 리셋 설정입니다. */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: "Noto Sans KR", sans-serif;
+  }
+/* header 박스 style 입니다. */
+
+.header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  /* header 좌측 로고 style 입니다. */
+  
+  .logo a img {
+    width: 64px;
+    height: 28px;
+  }
+  
+  .logo {
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* header 중앙 GNB style 입니다. */
+  
+  nav {
+    display: none;
+  }
+  
+  /* header 우측 ui style 입니다. */
+  
+  .header_ui {
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .lang {
+    display: none;
+  }
+  
+  .m_btn a {
+    display: flex;
+    align-items: center;
+  }
+  /* footer 박스의 style 입니다. */
+  
+  .footer {
+    margin-top: 100px;
+    height: 223px;
+    display: flex;
+    /* justify-content: space-between; */
+    border-top: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  /* footer 의 왼쪽 영역입니다. */
+  
+  .footer_left_upper a img {
+    display: none;
+  }
+  
+  .footer_left_upper a {
+    color: #000;
+  }
+  
+  .footer_left_info_1 p:first-child {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .footer_left_info_1 p:last-child {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .footer_left_info_2 {
+    margin-top: 30px;
+    font-size: 12px;
+    width: 80%;
+  }
+  
+  /* footer 의 오른쪽 영역입니다. */
+  
+  .footer_right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 21px;
+    width: 116px;
+  }
+  
+  .sns_btn {
+    width: 170px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .family_site {
+    display: none;
+  }
+  

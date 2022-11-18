@@ -9,7 +9,7 @@ $(function(){
         $('.viewBox ul li').css({
             display : 'block'
         });
-        $('.dial .numbers p').css('display','block')
+        $('.dial .numbers .pcP').css('display','block')
     }
 
     $('#kind ul li').eq(1).on('click',car_out)
@@ -28,9 +28,9 @@ $(function(){
         $('.viewBox ul .all').eq(0).css({
             display : 'block'
         });
-        $('.dial .numbers p').css('display','block')
-        $('.dial .numbers p').eq(2).css('display','none')
-        $('.dial .numbers p').eq(3).css('display','none')
+        $('.dial .numbers .pcP').css('display','none')
+        $('.dial .numbers .pcP').eq(0).css('display','block')
+        $('.dial .numbers .pcP').eq(1).css('display','block')
     }
 
     $('#kind ul li').eq(2).on('click',car_in)
@@ -45,8 +45,8 @@ $(function(){
         $('.viewBox ul .car_in').css({
             display : 'block',
         })
-        $('.dial .numbers p').css('display','none');
-        $('.dial .numbers p').eq(0).css('display','block');
+        $('.dial .numbers .pcP').css('display','none');
+        $('.dial .numbers .pcP').eq(0).css('display','block');
     }
 
     $('#kind ul li').eq(3).on('click',ect)
@@ -64,8 +64,8 @@ $(function(){
         $('.viewBox ul .all').eq(0).css({
             display : 'block'
         })
-        $('.dial .numbers p').css('display','none');
-        $('.dial .numbers p').eq(0).css('display','block');
+        $('.dial .numbers .pcP').css('display','none');
+        $('.dial .numbers .pcP').eq(0).css('display','block');
     }
 
     //다이얼
@@ -99,7 +99,7 @@ $(function(){
         itemArr.push($('.viewBox ul h2').eq(`${i}`).text().toLowerCase());
     }
     console.log(itemArr[0]);
-    $('.search').ons('click',search)
+    $('.search').on('click',search)
     function search(){
         let result = itemArr.indexOf($('.textbox').val().toLowerCase());
         console.log(result);

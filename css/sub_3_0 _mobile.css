@@ -1,12 +1,12 @@
 /* sub_3_0.css */
 .sub_3 .sub_main_banner {
     width: 100vw;
-    height: 500px;
+    height: 300px;
 }
 .sub_3 .sub_main_banner .container {
     width: 100%;
     height: 100%;
-    background-image: url(../images/imagesK/sub-title_product.jpg);
+    background-image: url(../images/imagesK/sub3_background_mobile.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: flex;
@@ -14,7 +14,7 @@
     align-items: center;
 }
 .sub_3 .sub_main_banner .container h1 {
-    font-size: 80px;
+    font-size: 40px;
     font-weight: 700;
     color: #fff;
 }
@@ -25,14 +25,14 @@
     height: 20px;
     display: fixed;
     left:0px;
-    top: 520px;
-    padding: 20px;
+    top: 120px;
+    padding-left: 20px;
 }
 .sub_3 .sub_menu > a{
     font-size: 14px;
 }
 .sub_3 .sub_title {
-    margin-top: 160px;
+    margin-top: 50px;
     width: 100vw;
     height: 60px;
     /* outline: 1px solid red; */
@@ -48,7 +48,7 @@
 
 }
 .sub_3 .sub_title .container .mark {
-    width: 200px;
+    width: 110px;
     height: 3px;
     background-color: #a2c233;
     position: absolute;
@@ -56,7 +56,7 @@
     top: 0;
 }
 .sub_3 .sub_title .container h2 {
-    font-size: 48px;
+    font-size: 26px;
     font-weight: 500;    
 }
 .sub_3 #kind {
@@ -65,11 +65,11 @@
     /* outline: 1px solid red; */
 }
 #kind .container {
-    max-width: 1520px;
+    width: 100%;
     height: 100%;
 }
 #kind .container .textbox {
-    width: 1400px;
+    width: 75%;
     height: 50px;
     border: 0;
     border-bottom: 3px solid #000;
@@ -86,18 +86,21 @@
     cursor: pointer;
 }
 #kind .container ul {
+    margin-top: 20px;
+    margin-left: 15px;
     width: 100%;
     height: 50px;
     display: flex;
+    flex-direction: column;
 }
 #kind .container ul > li {
-    margin-top: 20px;
-    width: calc((100% - 80px)/4);
+    margin-top: 10px;
+    width: 80%;
     height: 100%;
     border: 1px solid #023586;
     position: relative;
     text-align: center;
-    padding-top: 12px;
+    /* padding-top: 1px; */
 }
 #kind .container ul > li > a {
     width: 100%;
@@ -112,7 +115,7 @@
     margin-bottom: 200px;
 }
 .viewBox .container {
-    width: 1520px;
+    width: 100%;
     height: 100%;
     /* outline: 1px solid red; */
     position: relative;
@@ -120,38 +123,41 @@
 }
 .viewBox .container ul {
     width: 100%;
-    height: 5440px;
+    height: 9800px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    outline: 1px solid red;
     
 }
 .viewBox .container ul > li {
     outline: 1px solid rgba(0, 0, 0, 0.2);
-    width: 450px;
-    height: 600px;   
-    margin-top: 40px;
-    margin-bottom: 40px;
+    width: 80%;
+    height: 400px;   
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
 .viewBox .container ul >.all {
     outline: 0px solid white;
+    display: none;
 }
 .viewBox .container ul li> img {
     width: 100%;
-    height: 450px;
+    height: 250px;
+    outline: 1px solid blue;
 }
 .viewBox .container ul li> p {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 35px;
 } 
 .viewBox .container ul li> h2 {
-    font-size: 27px;
+    font-size: 18px;
     margin-top: 18px;
 } 
 .viewBox .dial {
-    margin-top: 30px;
-    /* outline: 1px solid red; */
-    width: 1920px;
+    margin-top: 10px;
+    outline: 1px solid red;
+    width: 100%;
 }
 .viewBox .dial .container {
     max-width: 500px;
@@ -181,7 +187,4 @@
     border-left: 1px solid #023586;
     border-right: 1px solid #023586;
     cursor: pointer;
-}
-.viewBox .dial .container .mobileP{
-    display: none;
 }

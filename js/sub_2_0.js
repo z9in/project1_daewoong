@@ -3,14 +3,60 @@
 let btnEl = document.querySelectorAll('.pop')[0];
 let paperEl = document.getElementById('paper');
 let closeEl = document.getElementsByTagName('button')[1];
+let imageEl = document.getElementsByClassName('images')[0];
 
-btnEl.addEventListener('click',translate);
+// btnEl.addEventListener('click',translat);
 
+// function translat() {
+//     paperEl.style.display='block'
+//     paperEl.style = {
+//         'height' : '500px'
+//     }
+// }
+
+let varUA = navigator.userAgent.toLowerCase(); //userAgent 값 얻기
+ 
+if ( varUA.indexOf('android') > -1) {
+    btnEl.addEventListener('click',() => paperEl.style.display='block');
+
+    closeEl.addEventListener('click',() => paperEl.style.display='none');
+
+    let num = 0;
+    imageEl.addEventListener('click',translate);
 function translate() {
-    paperEl.style.display='block'
-    paperEl.style = {
-        'height' : '500px'
-    }
+        num++
+        let numb = num%14
+        $('#paper .images img').css({
+            display: 'none'    
+        })
+        $('#paper .images img').eq(numb).css({
+            display: 'block'    
+        })
 }
+} else if ( varUA.indexOf("iphone") > -1 || varUA.indexOf("ipad") > -1 ||varUA.indexOf("ipod") > -1 ) {
+    btnEl.addEventListener('click',() => paperEl.style.display='block');
+
+    closeEl.addEventListener('click',() => paperEl.style.display='none');
+    
+    let num = 0;
+imageEl.addEventListener('click',translate);
+function translate() {
+        num++
+        let numb = num%14
+        $('#paper .images img').css({
+            display: 'none'    
+        })
+        $('#paper .images img').eq(numb).css({
+            display: 'block'    
+        })
+}
+} else {
+    btnEl.addEventListener('click',() => paperEl.style.display='block');
 
 closeEl.addEventListener('click',() => paperEl.style.display='none');
+
+
+}
+
+
+

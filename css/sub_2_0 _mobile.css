@@ -1,15 +1,15 @@
-/* sub_2_0 */
+/* sub_2_0_mobile.css */
 
 /* sub_main_ banner */
 .sub_2 .sub_main_banner {
     width: 100vw;
     height: 500px;
-    /* background-color: #ccc; */
+    background-color: #ccc;
 }
 .sub_main_banner .container {
-    max-width: 100%;
+    width: 100%;
     height: 100%;
-    background-image: url(../images/imagesk/resaerch_main_banner.jpg);
+    background-image: url(../images/imagesk/sub_2_0_mobile_main-banner.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: flex;
@@ -38,7 +38,7 @@
 /* sub_title */
 .sub_2 .sub_title {
     width: 100%;
-    height: 700px;
+    height: 450px;
     margin-top: 50px;
 }
 .sub_2 .sub_title .container {
@@ -51,7 +51,7 @@
     flex-direction: column;
 }
 .sub_2 .sub_title .container .text {
-    width:1520px;
+    max-width:1520px;
     position: relative;
 }
 .sub_2 .sub_title .container .text .mark {
@@ -62,33 +62,36 @@
     left: 0;
 }
 .sub_2 .sub_title p {
-    font-size: 50px;
+    font-size: 15px;
     padding-top: 10px;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+}
+.sub_2 .sub_title .pc_img {
+    display: none;
 }
 .sub_2 .sub_title .mobile_img {
-    display: none;
+    width: 100%;
 } 
 
 /* 연구소 소개 */
 #center {
     width: 100vw;
-    height: 1350px;
+    height: 450px;
 }
 #center .container {
     max-width: 1920px;
     height: 100%;
-    /* outline: 1px solid black; */
+    outline: 1px solid black;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 #center .container .text {
     width: 100%;
     position: relative;
-    margin-top: 160px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 25px;
     /* outline: 1px solid red; */
 }
 #center .container .mark {
@@ -99,20 +102,25 @@
     left: 5px;
 }
 #center .container h1 {
-    font-size: 48px;
+    font-size: 26px;
     font-weight: 500;
 }
 #center .container .pc_img {
-    margin-bottom: 100px;
-}
-#center .container .mobile_img {
     display: none;
+}
+
+#center .container .mobile_img {
+    margin-bottom: 100px;
+    width: 100%;
 }
 
 /* 제품 개발 */
 .sub_2 #pm {
     width: 100vw;
-    /* height: 1000px; */
+    height: 1900px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    /* outline: 1px solid red; */
 }
 #pm .container {
     max-width: 1920px;
@@ -121,31 +129,34 @@
     flex-direction: column;
 }
 #pm .container .text {
-    width: 1520px;
+    width: 100%;
     position: relative;
-    margin-top: 160px;
-    margin-bottom: 100px;
+    margin-bottom: 25px;
 }
 #pm .container .mark {
-    width: 130px;
+    width: 110px;
     height: 3px;
     background-color: #a2c233;
     position: absolute;
-    left: 5px;
+    /* left: 5px; */
 }
 #pm .container h1 {
-    font-size: 48px;
+    font-size: 26px;
     font-weight: 500;
 }
 #pm .container > ul {
-    width: 1520px;
+    width: 100%;
     height: 630px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 #pm .container ul > li {
-    width: 450px;
+    width: 100%;
     height: 630px;
+}
+#pm .container ul > li > img {
+    width: 100%;
 }
 #pm .container ul > li > h2 {
     margin-top: 25px;
@@ -163,28 +174,32 @@
     margin-top: 200px;
     margin-bottom: 200px;
     width: 100vw;
-    height: 500px;
+    height: 320px;
     /* background-color: #ccc; */
 }
 #tech .container {
     max-width: 1920px;
     height: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
     position: relative;
 }
 #tech .container .techBanner {
-    max-width: 1520px;
+    width: 100%;
     height: 100%;
     /* outline: 1px solid red; */
-    background-image: url(../images/imagesK/tech_background.jpg);
+    background-image: url(../images/imagesK/sub_2_0_tech_back.jpg);
     padding-top: 115px;
 }
-#tech .container .pc_ver {
-    color: white;
-    font-size: 48px;
-    margin-left: 100px;
-    margin-bottom: 80px;
-}
 #tech .container .mobile_ver {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin: 0px 30px;
+    margin-bottom: 30px;
+}
+#tech .container .pc_ver {
     display: none;
 }
 #tech .container button {
@@ -201,13 +216,14 @@
 
 /* 특허증 */
 #tech .container > #paper {
-    max-width: 1920px;
-    height: 650px;
+    width: 100%;
+    height: 500px;
     /* outline: 1px solid blue; */
-    overflow: hidden;
+    /* overflow: hidden; */
     position: absolute;
     top: 0;
     left: 0;
+    /* z-index: 99; */
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
 }
@@ -217,7 +233,7 @@
     height: 60px;
 }
 #paper .close button {
-    width: 160px;
+    width: 100px;
     height: 50px;
     background: none;
     border: 1.5px solid #fff;
@@ -225,29 +241,32 @@
     margin-top: 10px;
     margin-bottom: 10px;
     position: absolute;
-    right: 100px;
+    right: 40px;
 }
 #paper .images {
     /* outline: 1px solid red; */
-    width : 6750px;
-    height: 600px;
+    width : 100%;
+    height: 400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    animation: translate 20s infinite;
+    /* animation: translate 20s infinite; */
     
 }
-@keyframes translate {
+/* @keyframes translate {
     from {
         translate: 0px;
     }
     to {
         translate: -4900px;
     }
-}
+} */
 
 #paper .images img {
     outline: 1px solid black;
-    width: 400px;
-    height: 500px;
+    width: 250px;
+    height: 350px;
+    margin-top: 30px;
+    margin-left: 60px;
+    float: left;
 }
