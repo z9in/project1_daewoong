@@ -362,6 +362,7 @@
     top: 0;
 }
 .sub_3 .sub_title .container h2 {
+    padding-top: 10px
     margin: 0 auto;
     font-size: 48px;
     font-weight: 500;    
