@@ -1,0 +1,302 @@
+/* marketing-mobile.css */
+
+/* header */
+
+.header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* header 좌측 로고 style */
+
+.logo a img {
+  width: 64px;
+  height: 28px;
+}
+
+.logo {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+/* header 중앙 GNB style*/
+
+nav {
+  display: none;
+}
+
+/* header 우측 ui style  */
+
+.header_ui {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.lang {
+  display: none;
+}
+
+.m_btn a {
+  display: flex;
+  align-items: center;
+}
+/* ========================================================================== */
+
+/* site_map 입니다. */
+
+.site_map {
+  display: none;
+}
+
+.site_map_open {
+  display: block;
+}
+
+/* site_map 의 상단입니다. */
+
+.site_map {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.site_map_upper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site_map_logo a img {
+  width: 64px;
+  height: 28px;
+}
+
+/* site_map 의 하단입니다. */
+
+.site_map_nav {
+  height: 100%;
+}
+
+.site_map_dep1_ul {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  text-align: left;
+}
+
+.site_map_dep1_li {
+  margin-top: 30px;
+  border-bottom: 1px solid #666;
+}
+
+.site_map_dep1_li > a {
+  font-size: 20px;
+  color: #999;
+}
+
+.site_map_dep2_ul {
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.site_map_dep2_li {
+  margin-top: 10px;
+}
+
+.site_map_dep2_li > a {
+  font-size: 20px;
+  color: #000;
+}
+
+.site_map_dep1_li:hover > ul {
+  max-height: 200px;
+  transition: 1s;
+}
+
+/* ========================================================================== */
+/* Marketing */
+
+:root {
+  --main-color: #fff;
+  --bg-color: #f7f7f7;
+}
+
+.container {
+  max-width: 1520px;
+  background-color: var(--main-color);
+  margin: 0 auto;
+  position: relative;
+  /* height: 100vh; */
+  padding: 0 20px;
+}
+
+/* .sub-title */
+.sub-title {
+  max-width: 100%; /*1920px-container*/
+  height: 320px;
+  background-image: url(/images/marketing/sub-tilte.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: calc(50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub-title p {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* news */
+/* lnb */
+#news .container .Lnb {
+  display: none;
+}
+
+/* menu */
+#news .container .menu {
+  border-top: 3px solid #a2c233;
+  display: inline-block;
+  margin-top: 65px;
+  margin-bottom: 35px;
+}
+#news .container .menu h1 {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+/* section1 */
+#news .container .section1 ul li {
+  /* border: 2px solid red; */
+  /* height: 430px; */
+  margin-bottom: 80px;
+}
+#news .container .section1 ul li img {
+  width: 100%;
+}
+
+/* news-box */
+#news .container .section1 ul .news h3 {
+  margin: 15px 0px;
+  font-size: 14px;
+  font-weight: 400;
+}
+#news .container .section1 ul .news h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+#news .container .section1 ul .news p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 15px 0px;
+}
+#news .container .section1 ul .news .news-date {
+  color: #666666;
+  font-size: 14px;
+}
+
+/* dial */
+
+#news .container .dial {
+  /* outline: 1px solid blue; */
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+#news .dial .numbers {
+  /* outline: 1px solid #000; */
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+#news .dial .numbers button {
+  color: #000;
+  background-color: transparent;
+  border: none;
+}
+#news .dial .numbers a {
+  margin-left: 28px;
+  margin-right: 26px;
+}
+#news .dial .numbers .leftMax {
+  margin-left: 26.5px;
+}
+#news .dial .numbers .left {
+  margin-left: 20px;
+}
+#news .dial .numbers .right {
+  margin-left: 20px;
+}
+#news .dial .numbers .rightMax {
+  margin-left: 26.5px;
+}
+
+/* footer  */
+
+.footer {
+  margin-top: 100px;
+  height: 223px;
+  display: flex;
+  /* justify-content: space-between; */
+  border-top: 1px solid #ccc;
+  padding: 20px;
+}
+
+/* footer 의 왼쪽 영역  */
+
+.footer_left_upper a img {
+  display: none;
+}
+
+.footer_left_upper a {
+  color: #000;
+}
+
+.footer_left_info_1 p:first-child {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer_left_info_1 p:last-child {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.footer_left_info_2 {
+  margin-top: 30px;
+  font-size: 12px;
+  width: 80%;
+}
+
+/* footer 의 오른쪽 영역  */
+
+.footer_right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 21px;
+  width: 116px;
+}
+
+.sns_btn {
+  width: 170px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.family_site {
+  display: none;
+}

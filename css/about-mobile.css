@@ -1,0 +1,377 @@
+/* mobile.css */
+
+/* header */
+
+.header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* header 좌측 로고 style */
+
+.logo a img {
+  width: 64px;
+  height: 28px;
+}
+
+.logo {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+/* header 중앙 GNB style*/
+
+nav {
+  display: none;
+}
+
+/* header 우측 ui style  */
+
+.header_ui {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.lang {
+  display: none;
+}
+
+.m_btn a {
+  display: flex;
+  align-items: center;
+}
+/* ========================================================================== */
+
+/* site_map 입니다. */
+
+.site_map {
+  display: none;
+}
+
+.site_map_open {
+  display: block;
+}
+
+/* site_map 의 상단입니다. */
+
+.site_map {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.site_map_upper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site_map_logo a img {
+  width: 64px;
+  height: 28px;
+}
+
+/* site_map 의 하단입니다. */
+
+.site_map_nav {
+  height: 100%;
+}
+
+.site_map_dep1_ul {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  text-align: left;
+}
+
+.site_map_dep1_li {
+  margin-top: 30px;
+  border-bottom: 1px solid #666;
+}
+
+.site_map_dep1_li > a {
+  font-size: 20px;
+  color: #999;
+}
+
+.site_map_dep2_ul {
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.site_map_dep2_li {
+  margin-top: 10px;
+}
+
+.site_map_dep2_li > a {
+  font-size: 20px;
+  color: #000;
+}
+
+.site_map_dep1_li:hover > ul {
+  max-height: 200px;
+  transition: 1s;
+}
+
+/* ========================================================================== */
+/* about.css */
+
+:root {
+  --main-color: #fff;
+  --bg-color: #f7f7f7;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.container {
+  width: 280px;
+  /* 양 옆 패딩 뺀 값(320px-40px) */
+  /* background-color: #ccc; */
+  margin: 0 auto;
+  position: relative;
+}
+
+/* main-visual */
+.main-visual {
+  max-width: 100%; /*1920px-container*/
+  height: 320px;
+  background-image: url(/images/imagesM/about/main-visual.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-visual p {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* lnb */
+#intro .container .Lnb {
+  display: none;
+}
+
+/* intro */
+#intro .container .intro-text-box .mark {
+  width: 80px;
+  height: 3px;
+  background-color: #a2c233;
+  margin-bottom: 14px;
+  /* position: absolute;
+  left: 5px; */
+}
+
+#intro .container .intro-text-box {
+  padding: 61px 0px 50px 0px;
+}
+#intro .container .intro-text-box h1 {
+  margin-bottom: 25px;
+}
+#intro .container .intro-text-box p {
+  font-size: 15px;
+}
+
+/* vision */
+
+#vision .vision-bg1 {
+  background-color: var(--bg-color);
+}
+#vision .vision-bg2 {
+  background-color: var(--main-color);
+}
+
+#vision .container {
+  padding-top: 50px;
+  text-align: left;
+}
+
+#vision .container .menu {
+  border-top: 3px solid #a2c233;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+#vision .container h2 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+#vision .container p {
+  font-size: 16px;
+  line-height: 26px;
+}
+#vision .container img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* sec1-box */
+
+#vision .container .section1 {
+  padding-bottom: 54px;
+  /* background-color: goldenrod; */
+}
+
+#vision .container .section1 .sec1-box {
+  height: 537px;
+  /* background-color: yellow;
+  border: 3px solid red; */
+}
+
+#vision .container .section1 .sec1-box .text-box .text-box2 {
+  margin-bottom: 15px;
+}
+/* sec2-box */
+#vision .container .section2 {
+  padding-bottom: 54px;
+  /* background-color: rebeccapurple; */
+}
+
+#vision .container .section2 .sec2-box {
+  height: 488px;
+  /* background-color: blanchedalmond;
+  border: 1px solid red; */
+}
+#vision .container .section2 .sec2-box .text-box .text-box2 {
+  margin-bottom: 15px;
+}
+
+/* sec3 */
+#vision .container .section3 {
+  padding-bottom: 50px;
+  /* background: green; */
+}
+#vision .container .section3 .sec3-box {
+  height: 480px;
+  width: 100%;
+}
+#vision .container .section3 .sec3-box .text-box .text-box2 {
+  margin-bottom: 15px;
+}
+
+/* contact */
+
+#contact .container .contact-bg {
+  margin-bottom: 50px;
+}
+
+#contact .container .menu {
+  border-top: 3px solid #a2c233;
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+#contact .container .map-text-box {
+  margin-top: 20px;
+}
+
+#contact .container .map iframe {
+  width: 100%;
+  height: 180px;
+}
+
+#contact .container .map-text-box .map-text {
+  display: flex;
+  margin-bottom: 14px;
+  font-size: 12px;
+  font-weight: 400;
+}
+#contact .container .map-text-box .map-text img {
+  width: 18px;
+  height: 18px;
+}
+#contact .container .map-text-box .map-text h3 {
+  margin-left: 23px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+#contact .container .map-text-box .map-text .txt2 {
+  margin-left: 34px;
+}
+#contact .container .map-text-box .map-text .txt3 {
+  margin-left: 23px;
+}
+#contact .container .map-text-box .map-text .txt4 {
+  margin-left: 12px;
+}
+
+/* footer  */
+
+.footer {
+  margin-top: 100px;
+  height: 223px;
+  display: flex;
+  /* justify-content: space-between; */
+  border-top: 1px solid #ccc;
+  padding: 20px;
+}
+
+/* footer 의 왼쪽 영역  */
+
+.footer_left_upper a img {
+  display: none;
+}
+
+.footer_left_upper a {
+  color: #000;
+}
+
+.footer_left_info_1 p:first-child {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer_left_info_1 p:last-child {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.footer_left_info_2 {
+  margin-top: 30px;
+  font-size: 12px;
+  width: 80%;
+}
+
+/* footer 의 오른쪽 영역  */
+
+.footer_right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 21px;
+  width: 116px;
+}
+
+.sns_btn {
+  width: 170px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.family_site {
+  display: none;
+}
