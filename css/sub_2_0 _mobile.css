@@ -1,24 +1,229 @@
 /* sub_2_0_mobile.css */
+/* reset.css */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  
+/* header 박스 style 입니다. */
+
+.header {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  /* header 좌측 로고 style 입니다. */
+  
+  .logo a img {
+    width: 64px;
+    height: 28px;
+  }
+  
+  .logo {
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* header nav 입니다. */
+  
+  .header_nav {
+    display: none;
+  }
+  
+  /* header 우측 ui style 입니다. */
+  
+  .header_ui {
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .lang {
+    display: none;
+  }
+  
+  .m_btn a {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* ========================================================================== */
+  
+  /* site_map 입니다. */
+  
+  .site_map {
+    display: none;
+  }
+  
+  .site_map_open {
+    display: block;
+  }
+  
+  /* site_map 의 상단입니다. */
+  
+  .site_map {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    padding: 30px;
+  }
+  
+  .site_map_upper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .site_map_logo a img {
+    width: 64px;
+    height: 28px;
+  }
+  
+  /* site_map 의 하단입니다. */
+  
+  .site_map_nav {
+    height: 100%;
+  }
+  
+  .site_map_dep1_ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: left;
+  }
+  
+  .site_map_dep1_li {
+    margin-top: 30px;
+    border-bottom: 1px solid #666;
+  }
+  
+  .site_map_dep1_li > a {
+    font-size: 20px;
+    color: #999;
+  }
+  
+  .site_map_dep2_ul {
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 5px;
+  }
+  
+  .site_map_dep2_li {
+    margin-top: 10px;
+  }
+  
+  .site_map_dep2_li > a {
+    font-size: 20px;
+    color: #000;
+  }
+  
+  .site_map_dep1_li:hover > ul {
+    max-height: 200px;
+    transition: 1s;
+  }
+  
+  /* ========================================================================== */
+/* footer 박스의 style 입니다. */
+
+.footer {
+    margin-top: 100px;
+    height: 223px;
+    display: flex;
+    /* justify-content: space-between; */
+    border-top: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  /* footer 의 왼쪽 영역입니다. */
+  
+  .footer_left_upper a img {
+    display: none;
+  }
+  
+  .footer_left_upper a {
+    color: #000;
+  }
+  
+  .footer_left_info_1 p:first-child {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .footer_left_info_1 p:last-child {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .footer_left_info_2 {
+    margin-top: 30px;
+    font-size: 12px;
+    width: 80%;
+  }
+  
+  /* footer 의 오른쪽 영역입니다. */
+  
+  .footer_right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 21px;
+    width: 116px;
+  }
+  
+  .sns_btn {
+    width: 170px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .family_site {
+    display: none;
+  }
 
 /* sub_main_ banner */
 .sub_2 .sub_main_banner {
     width: 100vw;
-    height: 500px;
+    height: 300px;
     background-color: #ccc;
 }
 .sub_main_banner .container {
     width: 100%;
     height: 100%;
-    background-image: url(../images/imagesk/sub_2_0_mobile_main-banner.jpg);
+    background-image: url(../images/imagesk/mobileK/mobile_sub2_1.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: 0%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .sub_main_banner .container h1 {
     color: white;
-    font-size: 80px;    
+    font-size: 40px;    
 }
 
 /* sub_menu */
@@ -30,16 +235,22 @@
     left:0px;
     top: 520px;
     padding: 20px;
+    padding: 0 20px;
+    
 }
 .sub_2 .sub_menu > a{
     font-size: 14px;
+    color: #000;
 }
 
 /* sub_title */
 .sub_2 .sub_title {
     width: 100%;
-    height: 450px;
+    height: 400px;
     margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0 30px;
+    /* outline: 1px solid red; */
 }
 .sub_2 .sub_title .container {
     max-width: 1920px;
@@ -72,17 +283,23 @@
 }
 .sub_2 .sub_title .mobile_img {
     width: 100%;
+    height: 300px;
+    /* margin-bottom: 100px; */
 } 
 
 /* 연구소 소개 */
 #center {
+    /* margin-top: 100px; */
     width: 100vw;
-    height: 450px;
+    height: 400px;
+    background-color: #f7f7f7;
+    padding: 0 20px;
+    /* outline: 1px solid red; */
 }
 #center .container {
     max-width: 1920px;
     height: 100%;
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -90,7 +307,7 @@
 #center .container .text {
     width: 100%;
     position: relative;
-    margin-top: 50px;
+    margin-top: 25px;
     margin-bottom: 25px;
     /* outline: 1px solid red; */
 }
@@ -110,28 +327,29 @@
 }
 
 #center .container .mobile_img {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     width: 100%;
 }
 
 /* 제품 개발 */
 .sub_2 #pm {
     width: 100vw;
-    height: 1900px;
-    margin-bottom: 50px;
+    height: 1700px;
+    /* margin-bottom: 50px; */
     margin-top: 50px;
     /* outline: 1px solid red; */
+    padding: 0 20px;
 }
 #pm .container {
     max-width: 1920px;
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
 }
 #pm .container .text {
     width: 100%;
     position: relative;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
 }
 #pm .container .mark {
     width: 110px;
@@ -143,6 +361,7 @@
 #pm .container h1 {
     font-size: 26px;
     font-weight: 500;
+    margin-bottom: 20px;
 }
 #pm .container > ul {
     width: 100%;
@@ -153,29 +372,34 @@
 }
 #pm .container ul > li {
     width: 100%;
-    height: 630px;
+    height: 500px;
+    /* outline: 1px solid blue; */
+    margin-bottom: 50px;
 }
 #pm .container ul > li > img {
     width: 100%;
+    height: 300px;
 }
 #pm .container ul > li > h2 {
     margin-top: 25px;
-    font-size: 26px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 700;
 }
 #pm .container ul > li > p {
     margin-top: 25px;
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 1.5em;
     font-weight: 400;
 }
 
 /* 기술 특허 */
 #tech {
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 0px;
+    margin-bottom: 50px;
     width: 100vw;
     height: 320px;
     /* background-color: #ccc; */
+    padding: 0 20px;
 }
 #tech .container {
     max-width: 1920px;

@@ -1,15 +1,34 @@
 /* marketing-mobile.css */
 
-/* header */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* header 박스 style 입니다. */
 
 .header {
+  width: 100vw;
   height: 50px;
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
 }
 
-/* header 좌측 로고 style */
+/* header 좌측 로고 style 입니다. */
 
 .logo a img {
   width: 64px;
@@ -22,13 +41,13 @@
   align-items: center;
 }
 
-/* header 중앙 GNB style*/
+/* header nav 입니다. */
 
-nav {
+.header_nav {
   display: none;
 }
 
-/* header 우측 ui style  */
+/* header 우측 ui style 입니다. */
 
 .header_ui {
   height: 50px;
@@ -44,6 +63,7 @@ nav {
   display: flex;
   align-items: center;
 }
+
 /* ========================================================================== */
 
 /* site_map 입니다. */
@@ -143,7 +163,7 @@ nav {
 .sub-title {
   max-width: 100%; /*1920px-container*/
   height: 320px;
-  background-image: url(/images/marketing/sub-tilte.jpg);
+  background-image: url(../images/imagesM/marketing/sub-tilte.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: calc(50%);

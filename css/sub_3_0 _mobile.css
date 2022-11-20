@@ -1,4 +1,209 @@
 /* sub_3_0.css */
+/* reset.css */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  
+/* header 박스 style 입니다. */
+
+.header {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  /* header 좌측 로고 style 입니다. */
+  
+  .logo a img {
+    width: 64px;
+    height: 28px;
+  }
+  
+  .logo {
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* header nav 입니다. */
+  
+  .header_nav {
+    display: none;
+  }
+  
+  /* header 우측 ui style 입니다. */
+  
+  .header_ui {
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .lang {
+    display: none;
+  }
+  
+  .m_btn a {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* ========================================================================== */
+  
+  /* site_map 입니다. */
+  
+  .site_map {
+    display: none;
+  }
+  
+  .site_map_open {
+    display: block;
+  }
+  
+  /* site_map 의 상단입니다. */
+  
+  .site_map {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    padding: 30px;
+  }
+  
+  .site_map_upper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .site_map_logo a img {
+    width: 64px;
+    height: 28px;
+  }
+  
+  /* site_map 의 하단입니다. */
+  
+  .site_map_nav {
+    height: 100%;
+  }
+  
+  .site_map_dep1_ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: left;
+  }
+  
+  .site_map_dep1_li {
+    margin-top: 30px;
+    border-bottom: 1px solid #666;
+  }
+  
+  .site_map_dep1_li > a {
+    font-size: 20px;
+    color: #999;
+  }
+  
+  .site_map_dep2_ul {
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 5px;
+  }
+  
+  .site_map_dep2_li {
+    margin-top: 10px;
+  }
+  
+  .site_map_dep2_li > a {
+    font-size: 20px;
+    color: #000;
+  }
+  
+  .site_map_dep1_li:hover > ul {
+    max-height: 200px;
+    transition: 1s;
+  }
+  
+  /* ========================================================================== */
+/* footer 박스의 style 입니다. */
+
+.footer {
+    margin-top: 100px;
+    height: 223px;
+    display: flex;
+    /* justify-content: space-between; */
+    border-top: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  /* footer 의 왼쪽 영역입니다. */
+  
+  .footer_left_upper a img {
+    display: none;
+  }
+  
+  .footer_left_upper a {
+    color: #000;
+  }
+  
+  .footer_left_info_1 p:first-child {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .footer_left_info_1 p:last-child {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .footer_left_info_2 {
+    margin-top: 30px;
+    font-size: 12px;
+    width: 80%;
+  }
+  
+  /* footer 의 오른쪽 영역입니다. */
+  
+  .footer_right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 21px;
+    width: 116px;
+  }
+  
+  .sns_btn {
+    width: 170px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .family_site {
+    display: none;
+  }
+
 .sub_3 .sub_main_banner {
     width: 100vw;
     height: 300px;
@@ -27,9 +232,11 @@
     left:0px;
     top: 120px;
     padding-left: 20px;
+    padding: 0 20px;
 }
 .sub_3 .sub_menu > a{
     font-size: 14px;
+    color: #000;
 }
 .sub_3 .sub_title {
     margin-top: 50px;
@@ -39,13 +246,14 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    padding: 0 20px;
 }
 .sub_3 .sub_title .container {
     width: 1520px;
-    height: 100%;
+    /* height: 100%; */
     position: relative;
     /* outline: 1px solid blue; */
-
+    
 }
 .sub_3 .sub_title .container .mark {
     width: 110px;
@@ -61,8 +269,9 @@
 }
 .sub_3 #kind {
     width: 100vw;
-    height: 250px;
+    height: 200px;
     /* outline: 1px solid red; */
+    padding: 0 20px;
 }
 #kind .container {
     width: 100%;
@@ -70,15 +279,15 @@
 }
 #kind .container .textbox {
     width: 75%;
-    height: 50px;
+    height: 30px;
     border: 0;
     border-bottom: 3px solid #000;
     margin-top: 25px;
     margin-left: 12px;
 }
 #kind .container .search {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     background-image: url(../images/imagesK/bx_search.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -88,30 +297,35 @@
 #kind .container ul {
     margin-top: 20px;
     margin-left: 15px;
-    width: 100%;
-    height: 50px;
+    width: 90%;
+    height: 100px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* flex-direction: column; */
+    /* outline: 1px solid red; */
+    /* padding: 0 20px; */
 }
 #kind .container ul > li {
-    margin-top: 10px;
-    width: 80%;
-    height: 100%;
+    /* margin-top: 10px; */
+    width: 40%;
+    height: 40px;
     border: 1px solid #023586;
     position: relative;
     text-align: center;
-    /* padding-top: 1px; */
-}
+    padding-top: 10px;
+} 
 #kind .container ul > li > a {
     width: 100%;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 700;
+    color: #000;
 }
 
 .viewBox {
     width: 100vw;
     height: 1350px;
-    /* background-color: lightblue; */
+    background-color: #f7f7f7;
     margin-bottom: 200px;
 }
 .viewBox .container {
@@ -123,19 +337,20 @@
 }
 .viewBox .container ul {
     width: 100%;
-    height: 9800px;
+    height: 8700px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     
 }
 .viewBox .container ul > li {
     outline: 1px solid rgba(0, 0, 0, 0.2);
     width: 80%;
-    height: 400px;   
-    margin-top: 25px;
-    margin-bottom: 20px;
+    height: 320px;   
+    margin-top: 70px;
+    margin-bottom: 60px;
+    background-color: white;
 }
 .viewBox .container ul >.all {
     outline: 0px solid white;
@@ -143,8 +358,8 @@
 }
 .viewBox .container ul li> img {
     width: 100%;
-    height: 250px;
-    outline: 1px solid blue;
+    height: 200px;
+    /* outline: 1px solid blue; */
 }
 .viewBox .container ul li> p {
     font-size: 16px;
@@ -156,7 +371,7 @@
 } 
 .viewBox .dial {
     margin-top: 10px;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     width: 100%;
 }
 .viewBox .dial .container {

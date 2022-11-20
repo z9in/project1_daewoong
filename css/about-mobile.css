@@ -1,6 +1,6 @@
 /* mobile.css */
 
-/* header */
+/* header 박스 style 입니다. */
 
 .header {
   height: 50px;
@@ -9,7 +9,7 @@
   padding: 0 20px;
 }
 
-/* header 좌측 로고 style */
+/* header 좌측 로고 style 입니다. */
 
 .logo a img {
   width: 64px;
@@ -22,13 +22,13 @@
   align-items: center;
 }
 
-/* header 중앙 GNB style*/
+/* header nav 입니다. */
 
-nav {
+.header_nav {
   display: none;
 }
 
-/* header 우측 ui style  */
+/* header 우측 ui style 입니다. */
 
 .header_ui {
   height: 50px;
@@ -44,6 +44,7 @@ nav {
   display: flex;
   align-items: center;
 }
+
 /* ========================================================================== */
 
 /* site_map 입니다. */
@@ -316,7 +317,7 @@ h2 {
   margin-left: 12px;
 }
 
-/* footer  */
+/* footer 박스의 style 입니다. */
 
 .footer {
   margin-top: 100px;
@@ -327,7 +328,7 @@ h2 {
   padding: 20px;
 }
 
-/* footer 의 왼쪽 영역  */
+/* footer 의 왼쪽 영역입니다. */
 
 .footer_left_upper a img {
   display: none;
@@ -353,7 +354,7 @@ h2 {
   width: 80%;
 }
 
-/* footer 의 오른쪽 영역  */
+/* footer 의 오른쪽 영역입니다. */
 
 .footer_right {
   display: flex;
