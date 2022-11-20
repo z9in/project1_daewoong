@@ -506,26 +506,26 @@ nav > ul {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #ccc;
-  background-color: #999;
+  /* background-color: #999; */
 }
 
 /* footer 의 왼쪽 영역입니다. */
 
 .footer_left {
   padding: 26px 0 48px 200px;
-  outline: 1px solid black;
+  /* outline: 1px solid black; */
 }
 
 .footer_left_upper {
   height: 67px;
   display: flex;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .footer_left_upper a img {
   width: 152px;
   height: 67px;
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
 
 }
 
