@@ -222,7 +222,7 @@ h2 {
   max-width: 100%; /*1920px-container*/
   height: 500px;
   /* background-color: tomato; */
-  background-image: url(/images/imagesM/about/main-visual.jpg);
+  background-image: url(../images/imagesM/about/main-visual.jpg);
   display: flex;
   justify-content: center;
   align-items: center;
