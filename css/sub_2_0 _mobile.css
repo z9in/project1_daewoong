@@ -319,6 +319,7 @@
     left: 5px;
 }
 #center .container h1 {
+    padding-top: 10px
     font-size: 26px;
     font-weight: 500;
 }
@@ -359,6 +360,7 @@
     /* left: 5px; */
 }
 #pm .container h1 {
+    padding-top: 10px
     font-size: 26px;
     font-weight: 500;
     margin-bottom: 20px;
