@@ -154,7 +154,7 @@ h2 {
 .main-visual {
   max-width: 100%; /*1920px-container*/
   height: 320px;
-  background-image: url(/images/imagesM/about/main-visual.jpg);
+  background-image: url(../images/imagesM/about/main-visual.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
