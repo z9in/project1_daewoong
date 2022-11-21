@@ -333,6 +333,7 @@
 .sub_3 .sub_menu > a{
     margin: 0 auto;
     font-size: 14px;
+    color: #000;
 }
 .sub_3 .sub_title {
     margin: 0 auto;
@@ -362,7 +363,7 @@
     top: 0;
 }
 .sub_3 .sub_title .container h2 {
-    padding-top: 10px
+    padding-top: 10px;
     margin: 0 auto;
     font-size: 48px;
     font-weight: 500;    

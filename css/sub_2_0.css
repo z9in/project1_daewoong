@@ -343,6 +343,7 @@
 .sub_2 .sub_menu > a{
     font-size: 14px;
     margin: 0 auto;
+    color: #000;
 }
 
 /* sub_title */
@@ -350,7 +351,8 @@
     width: 100%;
     height: 700px;   
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 155px;
+    /* margin-bottom: 150px; */
 }
 .sub_2 .sub_title .container {
     max-width: 1920px;
@@ -366,6 +368,7 @@
     width:1520px;
     position: relative;
     margin: 0 auto;
+    margin-bottom: 150px;
 }
 .sub_2 .sub_title .container .text .mark {
     width: 130px;
@@ -376,7 +379,7 @@
     margin: 0 auto;
 }
 .sub_2 .sub_title p {
-    padding-top: 10px
+    padding-top: 10px;
     font-size: 50px;
     padding-top: 10px;    
     margin: 0 auto;
@@ -396,6 +399,7 @@
     width: 100vw;
     height: 1350px;
     margin: 0 auto;
+    margin-top: 160px;
 }
 #center .container {
     max-width: 1920px;
@@ -423,7 +427,7 @@
     margin: 0 auto;
 }
 #center .container h1 {
-    padding-top: 10px
+    padding-top: 10px;
     font-size: 48px;
     font-weight: 500;
     margin: 0 auto;
@@ -467,7 +471,7 @@
     margin: 0 auto;
 }
 #pm .container h1 {
-    padding-top: 10px
+    padding-top: 10px;
     font-size: 48px;
     font-weight: 500;
     margin: 0 auto;
